@@ -1,0 +1,252 @@
+@media (max-width: 990px) {
+  .uk-modal-body .imgBx {
+    display: none;
+  }
+
+  .uk-modal-body .user .formBx {
+    width: 100% !important;
+  }
+
+  .uk-modal-body.active .signInBx .formBx {
+    top: -100%;
+  }
+}
+@media (max-width: 1600px) {
+  .maim-header {
+    padding: 10rem 0;
+  }
+
+  .section {
+    padding: 10rem 0;
+  }
+}
+@media (max-width: 1260px) {
+  html {
+    font-size: 0.625vw !important;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+
+  .main-nav .nav-box {
+    width: 100%;
+  }
+  .main-nav .nav-box .logo-box::before {
+    font-size: 1.7rem;
+  }
+  .main-nav .nav-box .logo-box h1 {
+    font-size: 2.7rem;
+  }
+  .main-nav .nav-box .logo-box h1 span {
+    font-size: 2.2rem;
+  }
+  .main-nav .nav-item a {
+    font-size: 2.8rem;
+  }
+
+  .col-xl-6 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .maim-header {
+    padding: 25rem 0;
+  }
+
+  .section {
+    padding: 25rem 0;
+  }
+
+  .maim-header {
+    background-color: #171717;
+    background-image: none;
+  }
+  .maim-header .header-title {
+    display: inline-block;
+    text-align: center;
+  }
+  .maim-header .header-title h2 {
+    display: inline-block;
+    font-size: 20rem;
+    padding-top: 5rem;
+  }
+  .maim-header .header-title h2:before {
+    font-size: 7rem;
+  }
+
+  .btn-white {
+    margin-left: auto;
+    display: block !important;
+    margin-right: auto;
+    font-size: 3rem !important;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 3rem;
+  }
+
+  .title-section {
+    text-align: center;
+    padding: 1rem 0 4.5rem 0;
+  }
+  .title-section h2 {
+    font-size: 10rem;
+  }
+  .title-section:after, .title-section::before {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.5rem;
+  }
+
+  .cart-item {
+    height: 100rem;
+  }
+  .cart-item .content h2 {
+    font-size: 8rem;
+  }
+  .cart-item .content p {
+    font-size: 3rem;
+    margin: 4rem 0;
+  }
+  .cart-item .content .nav-item {
+    font-size: 3rem;
+  }
+  .cart-item .content .btn {
+    font-size: 2.5rem;
+    padding: 1.3rem 3rem;
+    margin-top: 3rem;
+  }
+
+  .advantage-box i {
+    font-size: 5rem;
+  }
+  .advantage-box .advantage-content h3 {
+    font-size: 5rem;
+  }
+  .advantage-box .advantage-content p {
+    font-size: 3rem;
+  }
+
+  .contacts-text {
+    font-size: 5rem;
+  }
+
+  .social-network-and-contacts {
+    justify-content: center;
+    align-items: center;
+  }
+  .social-network-and-contacts a {
+    font-size: 3rem;
+  }
+
+  .profile-header, .banner-profile {
+    padding: 20rem 0;
+  }
+}
+@media (max-width: 600px) {
+  #offcanvas-menu a {
+    font-size: 9rem;
+  }
+  #offcanvas-menu .btn {
+    font-size: 9rem;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .img-box {
+    display: none;
+  }
+
+  .maim-header .header-title h2 {
+    letter-spacing: 5rem;
+    font-size: 23rem;
+  }
+
+  .text {
+    font-size: 4rem;
+  }
+
+  .btn-white {
+    font-size: 5rem !important;
+    padding: 2rem 7rem !important;
+  }
+
+  .title-section h2 {
+    font-size: 14rem;
+    padding: 2.7rem 0 4.5rem 0;
+  }
+  .title-section:after, .title-section::before {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 6.2rem;
+  }
+
+  .cart-item {
+    height: 120rem;
+  }
+  .cart-item .imgBox img {
+    transform: translateY(-30%);
+  }
+  .cart-item .content:before {
+    font-size: 10rem;
+    top: -3rem;
+  }
+  .cart-item .content h2 {
+    font-size: 10rem;
+  }
+  .cart-item .content p {
+    font-size: 4rem;
+  }
+  .cart-item .content .nav-item {
+    font-size: 5rem;
+  }
+  .cart-item .content .btn {
+    font-size: 8rem;
+    padding: 2rem 4rem;
+  }
+
+  .map-box {
+    height: 100rem;
+  }
+
+  .contacts-text {
+    font-size: 7rem;
+  }
+
+  .social-network-and-contacts {
+    justify-content: center;
+    align-items: center;
+  }
+  .social-network-and-contacts a {
+    font-size: 5rem;
+  }
+
+  .advantage-box i {
+    font-size: 8rem;
+  }
+  .advantage-box .advantage-content h3 {
+    font-size: 6rem;
+  }
+  .advantage-box .advantage-content p {
+    font-size: 4rem;
+  }
+
+  .profile-header, .banner-profile {
+    padding: 35rem 0;
+  }
+  .profile-header h2, .banner-profile h2 {
+    font-size: 15rem;
+  }
+}

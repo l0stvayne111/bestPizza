@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/css/uikit.min.css"/>
+
+
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/media.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+
+
+    <title>Document</title>
+</head>
+<body>
+
+<div id="offcanvas-menu" uk-offcanvas="overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column">
+        <button class="uk-offcanvas-close text-white" type="button" uk-close></button>
+        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+            <li class=""><a href="#our-menu" class="text-white">Меню</a></li>
+            <li class=""><a href="#about-us" class="text-white">О Нас</a></li>
+            <li class=""><a href="#time-delivery" class="text-white">Доставка</a></li>
+            <li class=""><a href="#our-contacts" class="text-white">Контакты</a></li>
+            <li class="uk-nav-divider"></li>
+            <li><a href="#modal-vacancy" uk-toggle class="text-white">Вакансии</a></li>
+            <li><a href="#modal-center" uk-toggle class="text-white">Авторизация</a></li>
+        </ul>
+
+    </div>
+</div>
+
+
+<nav class="mobile-nav">
+    <div class="container">
+        <div class="nav-mobile-box">
+            <button class="btn" uk-toggle="target: #offcanvas-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo-box">
+                <h1><span>best</span>pizza</h1>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<nav class="main-nav">
+    <div class="container">
+        <div class="nav-box">
+            <div class="logo-box">
+                <h1><span>best</span>pizza</h1>
+            </div>
+            <ul class="nav navigation nav-pill">
+                <li class="nav-item">
+                    <a href="#our-menu" class="nav-link rounded-pill">Меню</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link rounded-pill">О Нас</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#time-delivery" class="nav-link rounded-pill">Доставка</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#our-contacts" class="nav-link rounded-pill">Контакты</a>
+                </li>
+            </ul>
+            <ul class="nav nav-pill">
+                <li class="nav-item">
+                    <a href="#modal-vacancy" uk-toggle class="nav-link rounded-pill">Вакансии</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#modal-center" uk-toggle class="nav-link rounded-pill">Авторизация</a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="wrapper-app" uk-scrollspy="cls: uk-animation-fade; target: .anim-box; delay: 500; repeat: false">
+    <header class="maim-header">
+        <div class="container">
+            <div class="col-xl-6">
+                <div class="header-title anim-box">
+                    <h2>PIZZA</h2>
+
+                </div>
+                <div class="text text-white anim-box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>
+                    Adipisci, iure magni. Accusamus, amet laborum<br> nam
+                    quibusdam quisquam tempora!
+                </div>
+                <button class="btn btn-white mt-5 anim-box">
+                    К каталогу <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section id="our-menu" class="section bg-white">
+        <img src="img/home-4-div.png" class="substrate top" alt="">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="title-section white anim-box" data-top="Наше меню" data-bottom="Сочная пицца в один клик">
+                        <h2>
+                            Выбери свою пиццу
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <div class="cart-item anim-box">
+                        <div class="imgBox">
+                            <img src="img_pizza/pexels-arthur-brognoli-3343624.jpg" class="" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>Деревенкая</h2>
+                            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic in molestias possimus
+                                temporibus. Alias, asperiores commodi corporis debitis deserunt doloremque eaque eius
+                                eum, molestiae, nostrum perferendis placeat reprehenderit sit tempora.
+                            </i></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">Размер: 25см</li>
+                                <li class="nav-item">Стоимость: 500р</li>
+                            </ul>
+                            <form action="" class="mt-3 trigger-form-add-pizza">
+                                <input type="hidden" value="1" class="input-id-pizza">
+                                <button type="submit" class="btn rounded-pill" uk-toggle="target: #modal-add-order"><i>В
+                                    корзину</i> <i class="fas fa-shopping-basket px-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <div class="cart-item anim-box">
+                        <div class="imgBox">
+                            <img src="img_pizza/pexels-ponyo-sakana-5088683.jpg" class="" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>Домашняя</h2>
+                            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic in molestias possimus
+                                temporibus. Alias, asperiores commodi corporis debitis deserunt doloremque eaque eius
+                                eum, molestiae, nostrum perferendis placeat reprehenderit sit tempora.
+                            </i></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">Размер: 25см</li>
+                                <li class="nav-item">Стоимость: 500р</li>
+                            </ul>
+                            <form action="" class="mt-3 trigger-form-add-pizza">
+                                <input type="hidden" value="2" class="input-id-pizza">
+                                <button type="submit" class="btn rounded-pill" uk-toggle="target: #modal-add-order"><i>В
+                                    корзину</i> <i class="fas fa-shopping-basket px-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <div class="cart-item anim-box">
+                        <div class="imgBox">
+                            <img src="img_pizza/pexels-arthur-brognoli-3343626.jpg" class="" alt="">
+                        </div>
+                        <div class="content">
+                            <h2>Деревенкая</h2>
+                            <p><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic in molestias possimus
+                                temporibus. Alias, asperiores commodi corporis debitis deserunt doloremque eaque eius
+                                eum, molestiae, nostrum perferendis placeat reprehenderit sit tempora.
+                            </i></p>
+                            <ul class="nav flex-column">
+                                <li class="nav-item">Размер: 25см</li>
+                                <li class="nav-item">Стоимость: 500р</li>
+                            </ul>
+                            <form action="" class="mt-3 trigger-form-add-pizza">
+                                <input type="hidden" value="3" class="input-id-pizza">
+                                <button type="submit" class="btn rounded-pill" uk-toggle="target: #modal-add-order"><i>В
+                                    корзину</i> <i class="fas fa-shopping-basket px-2"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/home-4-div.png" class="substrate bottom" alt="">
+    </section>
+    <section id="advantages" class="section bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 mb-5">
+                    <div class="title-section anim-box" data-top="Наши преимущества" data-bottom="Ваш лучший выбор">
+                        <h2>
+                            Почему мы?
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 mt-5">
+                    <div class="advantage-box anim-box">
+                        <i class="fas fa-apple-alt fa-2x"></i>
+                        <div class="advantage-content">
+                            <h3>Качественные продукты</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio facilis illum
+                                laudantium non? Enim eveniet magni quibusdam similique veritatis.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 offset-xl-1 mt-5">
+                    <div class="advantage-box anim-box">
+                        <i class="fas fa-clock fa-2x"></i>
+                        <div class="advantage-content">
+                            <h3>Быстро и недорого</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At distinctio facilis illum
+                                laudantium non? Enim eveniet magni quibusdam similique veritatis.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about-us" class="section bg-white">
+        <img src="img/home-4-div.png" class="substrate top" alt="">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-md-6 mb-5">
+                    <div class="title-section white anim-box" data-top="Кто мы?" data-bottom="Наша история">
+                        <h2>
+                            Немного о нас
+                        </h2>
+                    </div>
+                    <div class="content-section mt-5">
+                        <p class="text-bark text anim-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                            commodi corporis deserunt dolore dolorem doloremque ea earum
+                            expedita explicabo, fuga illum inventore labore laborum libero, maxime,
+                            omnis optio provident qui quibusdam quisquam saepe sequi soluta sunt
+                            unde ut velit voluptate. Aspernatur autem cum dolorem facere harum
+                            magnam odit quidem vitae.</p>
+                        <p class="text-bark text anim-box">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                            commodi corporis deserunt dolore
+                        </p>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5">
+                    <div class="img-box">
+                        <img src="img/benu-marinescu-e6ZOmEfNHLM-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/home-4-div.png" class="substrate bottom" alt="">
+    </section>
+    <section id="time-delivery" class="section bg-dark">
+        <img src="img/home-4-div.png" class="substrate top" alt="">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-xl-6 col-md-6 mb-5">
+                    <div class="title-section anim-box" data-top="Наша доставка" data-bottom="Самая быстрая доставка">
+                        <h2>
+                            Время доставки
+                        </h2>
+                    </div>
+                    <div class="content-section mt-5">
+                        <p class="text-white text anim-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+                            commodi corporis deserunt dolore dolorem doloremque ea earum
+                            expedita explicabo, fuga illum inventore labore laborum libero, maxime,
+                            omnis optio provident.</p>
+
+                        <button class="btn btn-white mt-5 anim-box">
+                            Узнать больше
+                        </button>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-5">
+                    <div class="img-box">
+                        <img src="img/pexels-mikhail-nilov-6969960.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/home-4-div.png" class="substrate bottom" alt="">
+    </section>
+    <section id="our-contacts" class="section bg-white">
+        <img src="img/home-4-div.png" class="substrate top" alt="">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 mb-5">
+                    <div class="title-section white anim-box" data-top="Как с нами связаться" data-bottom="Где нас найти">
+                        <h2>
+                            Наши контакты
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-xl-5 mt-4">
+                    <p class="text contacts-text">Наши соц.сети</p>
+                    <ul class="social-network-and-contacts nav mb-5 anim-box">
+                        <li class="nav-item"><a href="#" class=""><i class="fab fa-vk fa-2x"></i></a></li>
+                        <li class="nav-item"><a href="#" class=""><i class="fab fa-instagram fa-2x"></i></a></li>
+                        <li class="nav-item"><a href="#" class=""><i class="fab fa-twitter fa-2x"></i></a></li>
+                    </ul>
+                    <p class="text contacts-text">Наш телефон и email</p>
+                    <ul class="social-network-and-contacts flex-column nav mb-5 anim-box">
+                        <li class="nav-item mb-3"><a href="#" class=""><i class="fas fa-phone-alt fa-2x"></i><span>+7 999 999 99-99</span></a>
+                        </li>
+                        <li class="nav-item mx-0"><a href="#" class=""><i class="fas fa-envelope fa-2x"></i><span>mail@mail.com</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-7 mt-4">
+                    <div class="map-box anim-box">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3376.0106830748387!2d34.345606346334996!3d53.25039408811085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x85dac4f08dfbe520!2z0JHRgNGP0L3RgdC60LjQuSDQs9C-0YHRg9C00LDRgNGB0YLQstC10L3QvdGL0Lkg0LjQvdC20LXQvdC10YDQvdC-LdGC0LXRhdC90L7Qu9C-0LPQuNGH0LXRgdC60LjQuSDRg9C90LjQstC10YDRgdC40YLQtdGC!5e0!3m2!1sru!2sru!4v1618932592420!5m2!1sru!2sru"
+                                style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="img/home-4-div.png" class="substrate bottom" alt="">
+    </section>
+
+    <footer class="section bg-dark">
+        <div class="container text-white text-center">
+            Powered by UIkit, Bootstrap 5, JavaScript and Love ✌
+        </div>
+    </footer>
+</div>
+
+
+<div id="modal-center" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="user signInBx">
+            <div class="imgBx"><img src="img/shreshth-gupta-f_7ZvWLP8UM-unsplash.jpg" alt=""></div>
+            <div class="formBx">
+                <form action="" method="post">
+                    <h2>Войти в аккаунт</h2>
+                    <input type="text" name="login" class="rounded-pill" placeholder="Имя" required>
+                    <input type="password" name="pass" class="rounded-pill" placeholder="Пароль" required>
+                    <button type="submit" value="login" class="btn rounded-pill">Отправить</button>
+                    <p class="signup">У вас нет аккаунта? <span onclick="toggleForm()">Регистрация.</span></p>
+                </form>
+            </div>
+        </div>
+
+        <div class="user signUpBx">
+            <div class="formBx">
+                <form action="" method="post">
+                    <h2>Регистрация</h2>
+                    <input type="text" name="new_login" class="rounded-pill" placeholder="Имя" required>
+                    <input type="password" name="new_pass" class="rounded-pill" placeholder="Пароль" required>
+                    <button type="submit" value="registration" class="btn rounded-pill" name="new_user">Регистрация
+                    </button>
+                    <p class="signup">У вас уже есть аккаунт? <span onclick="toggleForm()">Войти.</span></p>
+                </form>
+            </div>
+            <div class="imgBx"><img src="img/artur-rutkowski-4yzEtTQLdL4-unsplash.jpg" alt=""></div>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="modal-vacancy" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="user">
+            <div class="imgBx"><img src="img/pexels-mikhail-nilov-6969960.jpg" alt=""></div>
+            <div class="formBx">
+                <form action="" method="post">
+                    <h2>Отправить заяку</h2>
+                    <input type="text" class="rounded-pill" placeholder="Имя" required>
+                    <input type="text" class="rounded-pill" placeholder="Фамилия" required>
+                    <input type="tel" class="rounded-pill" placeholder="Телефон" required>
+                    <input type="email" class="rounded-pill" placeholder="Эл.почта" required>
+                    <div class="form-check my-3">
+                        <input class="form-check-input is-invalid" type="checkbox" value="" id="checkboxValid" required>
+                        <label class="form-check-label text-white" for="checkboxValid">
+                            Вы соглашаетесь на обработку персональных данных
+                        </label>
+                    </div>
+                    <button type="submit" value="login" class="btn rounded-pill">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="modal-add-order" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default" type="button" uk-close></button>
+
+        <div class="user">
+            <div class="imgBx"><img src="img/jordan-nix-ljvm17bH-e0-unsplash.jpg" alt=""></div>
+            <div class="formBx">
+                <form action="" method="post">
+                    <h2>Оформить заказ</h2>
+                    <input type="text" class="rounded-pill" placeholder="Имя" required>
+                    <input type="text" class="rounded-pill" placeholder="Фамилия" required>
+                    <input type="tel" class="rounded-pill" placeholder="Телефон" required>
+                    <input type="hidden" class="rounded-pill id-pizza" value="">
+                    <button type="submit" value="login" class="btn rounded-pill">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    function checkCartPizza() {
+        let carts = document.querySelectorAll('.trigger-form-add-pizza');
+        if (carts.length !== 0) {
+            carts.forEach(cart => cart.addEventListener('submit', (evt) => {
+                evt.preventDefault();
+                let idPizza = cart.querySelector('.input-id-pizza').value;
+                addIdPizzaInForm(idPizza);
+            }))
+
+
+        }
+    }
+
+    function addIdPizzaInForm(id) {
+        let idPizza = document.querySelector('#modal-add-order .id-pizza');
+        idPizza.setAttribute('value', id);
+    }
+
+    checkCartPizza();
+</script>
+
+
+<script>
+    let bufScroll = 0;
+    window.addEventListener('scroll', () => {
+        let nav = document.querySelector('.main-nav');
+        (window.scrollY > 20) ? nav.classList.add('bg-white') : nav.classList.remove('bg-white');
+    })
+</script>
+<script>
+    function toggleForm() {
+        let container = document.querySelector('.uk-modal-body');
+        container.classList.toggle('active');
+    }
+</script>
+
+
+<!-- UIkit JS -->
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/uikit@3.6.19/dist/js/uikit-icons.min.js"></script>
+
+<!-- Bootstrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+</body>
+</html>

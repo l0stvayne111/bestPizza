@@ -1,0 +1,260 @@
+@media (max-width: 990px) {
+  .uk-modal-body .imgBx {
+    display: none;
+  }
+
+  .uk-modal-body .user .formBx {
+    width: 100% !important;
+  }
+
+  .uk-modal-body.active .signInBx .formBx {
+    top: -100%;
+  }
+}
+
+@media (max-width: 1600px) {
+  .maim-header {
+    padding: 10rem 0;
+  }
+  .section {
+    padding: 10rem 0;
+  }
+}
+
+@media (max-width: 1260px) {
+  html{
+    font-size: .625vw !important;
+  }
+  .mobile-nav{
+    display: block;
+  }
+  .main-nav{
+    display: none;
+  }
+  .container{
+    padding: 0 1rem;
+  }
+  .main-nav{
+    .nav-box{
+      width: 100%;
+      .logo-box{
+        &::before{
+          font-size: 1.7rem;
+        }
+        h1{
+          font-size: 2.7rem;
+          span{
+            font-size: 2.2rem;
+          }
+        }
+      }
+    }
+    .nav-item{
+      a{
+        font-size: 2.8rem;
+      }
+    }
+  }
+  .col-xl-6 {
+    display: flex;
+    flex-direction: column;
+  }
+  .maim-header {
+    padding: 25rem 0;
+  }
+  .section {
+    padding: 25rem 0;
+  }
+  .maim-header {
+    background-color: #171717;
+    background-image: none;
+
+    .header-title {
+      display: inline-block;
+
+      text-align: center;
+
+      h2 {
+        display: inline-block;
+        font-size: 20rem;
+        padding-top: 5rem;
+
+        &:before{
+          font-size: 7rem;
+        }
+      }
+    }
+  }
+  .btn-white {
+    margin-left: auto;
+    display: block !important;
+    margin-right: auto;
+    font-size: 3rem !important;
+  }
+  .text {
+    text-align: center;
+    font-size: 3rem;
+  }
+  .title-section{
+    text-align: center;
+    padding: 1rem 0 4.5rem 0;
+    h2{
+      font-size: 10rem;
+    }
+    &:after,&::before{
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 3.5rem;
+    }
+  }
+  .cart-item {
+    height: 100rem;
+    .content{
+      h2{
+        font-size: 8rem;
+      }
+      p{
+        font-size: 3rem;
+        margin: 4rem 0;
+      }
+      .nav-item{
+        font-size: 3rem;
+      }
+      .btn{
+        font-size: 2.5rem;
+        padding: 1.3rem 3rem;
+        margin-top: 3rem;
+      }
+    }
+  }
+  .advantage-box{
+    i{
+      font-size: 5rem;
+    }
+    .advantage-content{
+      h3{
+        font-size: 5rem;
+      }
+      p{
+        font-size: 3rem;
+      }
+    }
+  }
+  .contacts-text{
+    font-size: 5rem;
+  }
+  .social-network-and-contacts{
+    justify-content: center;
+    align-items: center;
+    a{
+      font-size: 3rem;
+    }
+  }
+  .profile-header,.banner-profile{
+    padding: 20rem 0;
+  }
+
+}
+@media (max-width: 600px) {
+  #offcanvas-menu{
+    a{
+      font-size: 9rem;
+    }
+    .btn{
+      font-size: 9rem;
+    }
+  }
+  .main-nav{
+    display: none;
+  }
+  .img-box{
+    display: none;
+  }
+  .maim-header{
+    .header-title{
+      h2{
+        letter-spacing: 5rem;
+        font-size: 23rem;
+      }
+    }
+  }
+  .text{
+    font-size: 4rem;
+  }
+  .btn-white {
+    font-size: 5rem !important;
+    padding: 2rem 7rem !important;
+  }
+  .title-section{
+    h2{
+      font-size: 14rem;
+      padding: 2.7rem 0 4.5rem 0;
+    }
+    &:after,&::before{
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 6.2rem;
+    }
+  }
+  .cart-item{
+    height: 120rem;
+    .imgBox{
+      img{
+        transform: translateY(-30%);
+      }
+    }
+    .content{
+      &:before{
+        font-size: 10rem;
+        top: -3rem;
+      }
+      h2{
+        font-size: 10rem;
+      }
+      p{
+        font-size: 4rem;
+      }
+      .nav-item{
+        font-size: 5rem;
+      }
+      .btn{
+        font-size: 8rem;
+        padding: 2rem 4rem;
+      }
+
+    }
+  }
+  .map-box{
+    height: 100rem;
+  }
+  .contacts-text{
+    font-size: 7rem;
+  }
+  .social-network-and-contacts{
+    justify-content: center;
+    align-items: center;
+    a{
+      font-size: 5rem;
+    }
+  }
+  .advantage-box{
+    i{
+      font-size: 8rem;
+    }
+    .advantage-content{
+      h3{
+        font-size: 6rem;
+      }
+      p{
+        font-size: 4rem;
+      }
+    }
+  }
+  .profile-header,.banner-profile{
+    padding: 35rem 0;
+    h2{
+      font-size: 15rem;
+    }
+  }
+
+}
